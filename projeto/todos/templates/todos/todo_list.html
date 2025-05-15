@@ -2,7 +2,7 @@
 <ul>
  {% for todo in todo_list %}
    <li>
-     {{ todo.title }} - {{ todo.deadline }} - <a href="{% url 'todo_update' todo.pk %}">Editar</a> | <a href="{% url 'todo_delete' todo.pk %}">Excluir</a> | <a href="{% url 'todo_complete' todo.pk %}">Completar</a>
+     {{ todo.title }} -- {{ todo.deadline }} -- <a href="{% url 'todo_update' todo.pk %}">Editar</a> | <a href="{% url 'todo_delete' todo.pk %}">Excluir</a> | <a href="{% url 'todo_complete' todo.pk %}">Completar</a>
    </li>
  {% endfor %}
 </ul>
